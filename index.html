@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>密碼保護頁面</title>
+    <script>
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            if (password === "ffnalonq") {
+                // 如果密碼正確，跳轉到 Google Docs 文件
+                window.location.href = "https://docs.google.com/document/d/1yB2-LgsWmq1HdeUYtbVKqwStvK9qR3OBgJxkiGDYLR4/edit?usp=drivesdk";
+            } else {
+                // 如果密碼錯誤，提示用戶
+                alert("密碼錯誤，請重試！");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 100px;">
+        <h1>文檔訪問密碼保護</h1>
+        <p>請輸入密碼以訪問文檔</p>
+        <input type="password" id="password" placeholder="輸入密碼" style="padding: 10px; font-size: 16px;">
+        <br><br>
+        <button onclick="validatePassword()" style="padding: 10px 20px; font-size: 16px;">提交</button>
+    </div>
+</body>
+</html>
